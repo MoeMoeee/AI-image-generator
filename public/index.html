@@ -7,13 +7,14 @@
     <title>AI Image Generator</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body> 
     <!-- title -->
     <h1 id = "title">Text to Image Generator </h1>
     <h2 id = "header">Describe Your Image</h2>
 
     <!-- form  -->
-    <div>
+    <div id = "div-body">
         <form>
             <input type="text" id="description-input" name="description-input" placeholder="Describe what you want in a sentence..."><br>
             <select id="img-size">
@@ -27,6 +28,15 @@
                 <input id = "form-submit" type="submit" value="Generate">
             </div>
             </form>
-    </div>
+
+    <!-- display image -->
+    <section id="image">
+        <div id="image-container">
+          <h3 id="msg"></h3>
+          <img src="https://images.unsplash.com/photo-1676390812706-e2cfe00957a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="" id="image" />
+        </div>
+    </section
+</div>
+
 </body>
 </html>
