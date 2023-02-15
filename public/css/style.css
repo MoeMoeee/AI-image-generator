@@ -1,4 +1,6 @@
 body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
     background-color: rgb(201, 219, 239);
 }
 
@@ -21,12 +23,6 @@ h2 {
     justify-content: center;
 }
 
-#div-body {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
 #description-input {
     width: 80rem;
     border: 1px solid #ccc;
@@ -39,10 +35,10 @@ h2 {
 }
 
 #img-size {
-    padding: 8px 8px;
+    padding: 8px 14px;
     margin-left: 30px;
-    font-size: 17px;
-
+    font-size: 20px;
+    width: 120px;
 }
 
 #submit-div {
@@ -61,5 +57,11 @@ h2 {
 #image {
     display: flex;
     justify-content: center;
-
+    width: 100%;
 }
+
+.msg {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
