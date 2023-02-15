@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Image Generator</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body> 
     <!-- title -->
     <h1 id = "title">Text to Image Generator </h1>
-    <h2 id = "header">Describe your image</h2>
+    <h2 id = "header">Describe Your Image</h2>
 
     <!-- form  -->
-    <form>
-        <input type="text" id="description-input" name="description-input" placeholder="Describe what you want in a sentence"><br>
-        <select id="img-size">
-            <option value="img-size-choice">Small</option>
-            <option value="img-size-choice">Medium</option>
-            <option value="img-size-choice">Large</option>
-        </select>
-        <!-- submit button -->
-        <input type="submit" value="Generate">
-    </form>
+    <div>
+        <form>
+            <input type="text" id="description-input" name="description-input" placeholder="Describe what you want in a sentence..."><br>
+            <select id="img-size">
+                <option value="img-size-choice">Small</option>
+                <option value="img-size-choice">Medium</option>
+                <option value="img-size-choice">Large</option>
+            </select>
+
+            <!-- submit button -->
+            <div id = "submit-div">
+                <input id = "form-submit" type="submit" value="Generate">
+            </div>
+            </form>
+    </div>
 </body>
 </html>
