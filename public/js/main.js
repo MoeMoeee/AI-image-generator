@@ -32,12 +32,14 @@ async function generateImage(prompt, size) {
             throw new Error('That image could not be generated');
           }
 
-          document.querySelector('#msg').textContent = '';
 
           const res = await response.json();
           const imageUrl = res.data;
             
           document.querySelector('#image_display').src = imageUrl;
+
+          document.querySelector('#msg').textContent = '';
+
 
     } catch (error) {
         document.querySelector('#msg').textContent = error;
