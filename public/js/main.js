@@ -12,7 +12,7 @@ function onSubmit(e) {
     }
 
     //generate the image after get the data
-
+    document.querySelector('#msg').textContent = 'Your image is generating... Please wait...';
     generateImage(prompt, img_size);
 }
 async function generateImage(prompt, size) {
@@ -31,8 +31,8 @@ async function generateImage(prompt, size) {
           if (!response.ok) {
             throw new Error('That image could not be generated');
           }
-          
-          document.querySelector('#msg').textContent = 'Your image is generating... Please wait...';
+
+          document.querySelector('#msg').textContent = '';
 
           const res = await response.json();
           const imageUrl = res.data;
