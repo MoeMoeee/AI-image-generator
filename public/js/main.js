@@ -43,8 +43,8 @@ async function generateImage(prompt, size) {
 
     } catch (error) {
         document.querySelector('#msg').textContent = error;
+      }
     }
-}
 
 document.querySelector('#form').addEventListener('submit', onSubmit);
 
