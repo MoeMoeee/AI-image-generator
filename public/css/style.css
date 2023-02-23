@@ -1,17 +1,17 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
-    /* background-color: rgb(201, 219, 239); */
     background-size: cover;
     background-image: url("https://images.unsplash.com/photo-1520916784675-1b97f1fc1c05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
 }
 
 h1 {
     font-size: 50px;
+    margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 40px;
 }
 
 #title {
@@ -24,6 +24,7 @@ h2 {
     display: flex;
     justify-content: center;
 }
+
 #form-style {
     display: flex;
     justify-content: center;
@@ -35,16 +36,18 @@ h2 {
     margin: 8px 0;
     margin-left: 30px;
     padding: 12px 15px;
-    /* margin-right: 8px; */
     border-radius: 6px;
     font-size: 20px;
 }
 
 #img-size {
+    border-radius: 4px;
     padding: 8px 14px;
+    margin-top: 5px;
     margin-left: 30px;
+    margin-bottom: 30px;
     font-size: 20px;
-    width: 120px;
+    width: max-content;
 }
 
 #submit-div {
@@ -53,15 +56,15 @@ h2 {
 }
 
 #form-submit:hover {
-    background-color: #c57a44;
+    background-color: #c07742;
     color: white;
     transition: 0.2s;
 }
 
 #form-submit {
     margin-right: 8px;
-    border-radius: 10px;
-    font-size: 20px;
+    border-radius: 9px;
+    font-size: 23px;
     cursor: pointer;
     padding: 8px 8px;
 }
@@ -73,8 +76,6 @@ h2 {
 }
 
 .msg {
-    font-size: 1.8rem;
-    display: flex;
-    text-align: center;
+    font-size: 1.9rem;
     margin-top: 1rem;
   }
