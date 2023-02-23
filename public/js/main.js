@@ -14,7 +14,15 @@ function onSubmit(e) {
     //generate the image after get the data
     document.querySelector('#msg').textContent = 'Your image is generating... Please wait...';
     generateImage(prompt, img_size);
+    downloadButton();
 }
+
+    
+function downloadButton() {
+  document.getElementById('downloadHolder').innerHTML = '<input type="button" onClick="javascript:removeBtn();" value="Download" />';
+}
+
+
 async function generateImage(prompt, size) {
     try {
         const response = await fetch('/openai/generateimage', {
@@ -35,9 +43,10 @@ async function generateImage(prompt, size) {
 
           const res = await response.json();
           const imageUrl = res.data;
-            
+          
+          // get img URL 
           document.querySelector('#image_display').src = imageUrl;
-
+          document.querySelector('#download_display').href = imageUrl;
           document.querySelector('#msg').textContent = '';
 
 
