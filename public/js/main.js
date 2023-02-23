@@ -12,16 +12,9 @@ function onSubmit(e) {
     }
 
     //generate the image after get the data
-    document.querySelector('#msg').textContent = 'Your image is generating... Please wait...';
+    document.querySelector('#msg').textContent = 'Your image is generating...';
     generateImage(prompt, img_size);
-    downloadButton();
 }
-
-    
-function downloadButton() {
-  document.getElementById('downloadHolder').innerHTML = '<input type="button" onClick="javascript:removeBtn();" value="Download" />';
-}
-
 
 async function generateImage(prompt, size) {
     try {
@@ -46,11 +39,10 @@ async function generateImage(prompt, size) {
           
           // get img URL 
           document.querySelector('#image_display').src = imageUrl;
-          document.querySelector('#download_display').href = imageUrl;
           document.querySelector('#msg').textContent = '';
 
-
-    } catch (error) {
+    } 
+    catch (error) {
         document.querySelector('#msg').textContent = error;
       }
     }

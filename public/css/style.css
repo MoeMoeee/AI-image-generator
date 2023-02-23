@@ -38,8 +38,6 @@ h2 {
     /* margin-right: 8px; */
     border-radius: 6px;
     font-size: 20px;
-
-
 }
 
 #img-size {
@@ -54,9 +52,15 @@ h2 {
     justify-content: center;
 }
 
+#form-submit:hover {
+    background-color: #c57a44;
+    color: white;
+    transition: 0.2s;
+}
+
 #form-submit {
     margin-right: 8px;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
     padding: 8px 8px;
@@ -69,7 +73,8 @@ h2 {
 }
 
 .msg {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    display: flex;
     text-align: center;
     margin-top: 1rem;
   }
